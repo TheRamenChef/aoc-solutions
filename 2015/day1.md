@@ -12,7 +12,7 @@ As is usual with first puzzles, this one is extremely simple. Simply iterate ove
         else if (c == ')')
             floor--;
         else
-            throw new PuzzleException('invalid direction');
+            throw new PuzzleException("invalid direction");
     }
     return floor;
 
@@ -28,8 +28,8 @@ Now we just need to use the previous code, but modify it a little.
         else if (c == ')')
             floor--;
         else
-            throw new PuzzleException('invalid direction');
+            throw new PuzzleException("invalid direction");
         if (floor < 0)
             return i + 1;
     }
-    throw new PuzzleException('does not reach basement');
+    throw new PuzzleException("does not reach basement");
