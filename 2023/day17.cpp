@@ -18,12 +18,12 @@ class node {
     char dir;
     char moves;
     unsigned short int cost;
-    const node *parent;
+    // const node *parent;
 
     node() {}
 
     node(const node *parent): node(*parent) {
-        this->parent = parent;
+        // this->parent = parent;
     }
 };
 
